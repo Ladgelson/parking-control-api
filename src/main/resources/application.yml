@@ -1,0 +1,20 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/parking_control_db
+    username: postgres
+    password: banco123
+  jpa:
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        jdbc:
+          lob:
+            non_contextual_creation: true
+
+ladgelson:
+  app:
+    jwtSecret: Roub@ramSecretKey
+    jwtExpirationMs: 86400000
+
+
